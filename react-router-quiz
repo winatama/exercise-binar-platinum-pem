@@ -1,0 +1,73 @@
+1.  v5 (Nested Routing, Router Parameters)
+    v6 (Simpler and more intuitive API, Relative Routes)
+
+2.  <Switch> komponen serta dapat digantikan <Routes> komponennya
+
+3. 
+
+4.  Menukarkan fragmen tampilan tertentu berdasarkan rute saat itu, cth menavigasikan informasi pengguna alih2 mengganti
+    seluruh halaman, namun hanya konten tab yang diganti
+
+5.  Menggunakan history dengan memungkinkan untuk melakukan navigasi secara terprogram dalam komponen react
+
+6.  
+
+7.  Untuk mengakses parameter routes pada saat mengelola rutenya secara dinamis di URLHooknya
+
+8.  Bisa didapatkan dan mensetting string query dengan kait useSearchParams 
+
+9.  Sebagai pengganti yang memungkinan komponen user untuk merender rute turunannya
+    Dalam hal tata letak, cth menginjeksi komponen bergantung pada rutenya daripada membungkus stiap komponen rute dalam komponen tata letak
+
+10. Merender elemen yang dapat diakses dengan href asli yang menunjuk ke sumber yang ditautkan 
+
+11. <Link> digunakan untuk menavigasikan antar routes dalam Aplikasi
+
+12. Prop pada komponen <Route> merupakan pengganti prop komponen yang digunakan pada versi sebelumnya. Adapun memiliki
+    tujuan yang sama namun ada beberapa perbedaan diantaranya :
+    - Pada (v4 & v5) prop komponen digunakan untuk menentukan komponen react yang akan dirender ketika routesnya cocok
+    - Di v6 elemen prop digunakan sebagai pengganti komponen. Sehingga dapat diteruskan elemen yang mewakili komponen     tersebut
+
+13. - Install react router v6
+    - Create komponen
+    - Wrap routesnya
+    - Use dynamic imports and React.lazy()
+    - Add suspense, karena akan dapat menunda, serta tambahkan komponen <Suspense>
+    - Testign, pengujian akan menavigasi antar routes pada Aplikasi
+
+14. useRoutes merupakan hook level rendah yang disediakan untuk mengimplementasikan logika matching routes khusus pada
+    komponen. Yang mana dapat menentukan routes secara manual dan komponen keterkaitannya sehingga memberikan banyak fleksibilitas dan kontrol atas penanganan routing dalam aplikasi
+
+15. 
+
+16. Penanganan skenario 404, melibatkan penggunaan komponen <Routes> tanpa jalur yang ditentukan. Routes ini akan
+    mencocokkan lokasi mana pun yang belum cocok dengan routes lain, sehingga efektif dalam bertindak sebagai penampung semua jalur yang tidak diketahui
+
+17. Hook useNavigate menyediakan cara untuk menavigasi antar routes secara terprogram dalam komponen
+
+18. 
+
+19. 
+
+20. Dapat menentukan routes dengan beberapa parameter menggunakan sintaks, untuk setiap parameter di jalur route yang
+    mana setiap parameter dipisahkan dengan "/"
+
+21.
+
+22.
+
+23.
+
+24.
+
+25.
+
+26.
+
+27.
+
+28.
+
+29.
+
+30.

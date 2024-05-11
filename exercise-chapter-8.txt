@@ -1,0 +1,91 @@
+--Slide 08--
+
+--Slide 09--
+
+1.  Apa itu otorisasi ?
+    
+2.  Apa perbedaan utama antara otentikasi dan otorisasi ?
+    authentication (otentikasi) merupakan proses validasi sedangkan
+    authorization (otorisasi) merupakan proses menentukan jenis akses untuk setiap identitas atau role
+
+3.  Sebutkan 2 metode otorisasi yang sering digunakan dalam sistem komputer
+
+4.  Apa itu Role-based Access Control ?
+
+5.  Apa itu Policy-based Access Control ?
+
+6.  Apa keuntungan menggunakan ABAC dibandingkan dengan RBAC ?
+
+7.  Apa itu JSON Web Token (JWT) dan bagaimana hubungannya dengan otorisasi ?
+
+8.  Apa yang dimaksud dengan "least privilege" dalam konteks otorisasi ?
+
+9.  Mengapa penting untuk sering memeriksa dan memperbarui kebijakan otorisasi ?
+
+10. Apa itu Access Control List (ACL) ?
+
+--Slide 10--
+
+1.  Bagaimana otentikasi dan otorisasi bekerja bersama dalam keamanan sistem informasi ?
+    Otentikasi memverifikasi identitas pengguna atau sistem yang mencoba mengakses sumber daya.
+    Otorisasi menentukan sumber daya atau tindakan apa yang boleh diakses atau dilakukan oleh pengguna.
+    Dengan menggabungkan otentikasi dan otorisasi, organisasi dapat mengontrol akses terhadap informasi sensitif,
+    melindungi terhadap akses tidak sah, dan menjaga integritas dan kerahasiaan sistem dan data tersebut.
+
+2.  Sebutkan contoh aplikasi yang menggunakan otentikasi dan otorisasi
+    Web aplikasi, aplikasi enterprise, cloud service, aplikasi mobil, dan  
+
+3.  Apa yang terjadi jika proses otentikasi gagal ?
+    Access denied, lockout, logging dan alerting, fallback mechanism
+
+4.  Mengapa penting untuk log aktivitas otentikasi dan otorisasi ?
+    Monitoring keamanan, analisa forensik, audit dan akuntabilitas, 
+
+5.  Bagaimana cara sistem menangani perubahan kebijakan otorisasi tanpa mengganggu pengguna ?
+    Pembaruan Tambahan, 
+    Pembuatan Versi, 
+    Pengujian dan Staging, 
+    Peluncuran Otomatis dengan Mekanisme Rollback, 
+    Pemberitahuan dan Pelatihan Pengguna, 
+    Izin Terperinci, 
+    Pemantauan dan Peringatan Real-time, 
+    Mekanisme Umpan Balik
+
+6.  Apa pengaruh kegagalan sistem otentikasi terhadap proses otorisasi ?
+    Penolakan Akses, Mekanisme Penggantian, Akses Terbatas, Intervensi Manual, Risiko Keamanan
+
+7.  Bagaimana implementasi kebijakan "zero trust" mempengaruhi otentikasi dan otorisasi ?
+    Otentikasi Berkelanjutan, 
+    Akses Hak Istimewa Terkecil, 
+    Segmentasi Mikro, 
+    Akses Jaringan Zero Trust (ZTNA), 
+    Keamanan Berpusat pada Identitas, 
+    Penegakan Kebijakan Dinamis, 
+    Visibilitas dan Pemantauan
+
+8.  Apa dampak dari serangan keamanan pada sistem otentikasi dan otorisasi ?
+    Akses Tidak Sah, 
+    Pelanggaran Data, 
+    Pencurian dan Penipuan Identitas, 
+    Gangguan Layanan, 
+    Rusaknya Reputasi, 
+    Pelanggaran Kepatuhan Terhadap Peraturan, 
+    Biaya Operasional
+
+9.  Bagaimana teknologi blockchain dapat mempengaruhi otentikasi dan otorisasi ?
+    Manajemen Identitas Terdesentralisasi, 
+    Catatan Identitas yang Tidak Dapat Diubah, 
+    Tanda Tangan dan Pengesahan Digital, 
+    Protokol Otentikasi Terdesentralisasi, 
+    Kontrol Akses yang Diizinkan, 
+    Auditabilitas dan Transparansi, 
+    Interoperabilitas dan Portabilitas
+    
+10. Apa peran administrator sistem dalam pengelolaan otentikasi dan otorisasi ?
+    Implementasi dan Konfigurasi, 
+    Penyediaan dan Pencabutan Penyediaan Pengguna, 
+    Penegakan Kebijakan Keamanan, 
+    Pemecahan Masalah dan Dukungan, 
+    Pemantauan dan Audit, 
+    Pemeliharaan dan Peningkatan Sistem, 
+    Pelatihan dan Edukasi Pengguna

@@ -8,6 +8,7 @@
 3. Explain the steps to create a react application and print Hello World
     Answer :
     Download Node.js, 
+
     kemudian install npm, 
     lalu inisialisai projectnya, 
     setelah terbentuk buat komponennya answer-chapter-6.js/App.jsx
@@ -21,39 +22,40 @@
     Fungsi argumen yang ada dalam JavaScript yang kemudian di kirim sebagai Properti untuk menjadi komponen
 6. What is higher-order component in React ?
     Answer : 
-
+    Singkatnya fungsi yang mengambil suatu function komponen dan mengembalikan komponen baru berdasarkan sesuatu yang kondisional
 7. Explain the difference between functional and class component in React ?
     Answer :
-
+    function readable - lebih kompleks
 8. What are hooks in React ?
     Answer :
     Fungsi komponen yang disediakan untuk menggunakan state dan fitur react yang lain tanpa perlu membuat class component  
 9. Explain the useState hook in React ?
     Answer :
-    Berfungsi untuk state variable yang akan dibuat dan diupdate
+    Berfungsi untuk state variable yang akan dibuat dan diupdate, Pengelolaan sebuah state di dalam komponen
 10. Explain the "useEffect" hook in react ?
     Answer :
     Berfungsi untuk menambahkan side effect di function component serta menjadi alternatif untuk lifecycle method component
 11. What is prop drilling and its disadvantages ?
     Answer :
-    
+    Komponennya diwariskan terus menerus membuat kompleks, maintenancenya sulit dicari  
 12. Explain props and state in React with differences ?
     Answer :
-
+    Sebuah atribut read only tidak immutability , data yang ada didalam komponen mutable 
 13. What is the use of ref in React ?
     Answer :
-
+    Menggantikan document by id tapi hanya berlaku untuk DOM tersebut
 14. What is this setState function in React ?
     Answer :
     Untuk melakukan pembaruan state yang mana menerima nilai state baru dan merespons dengan merender ulang komponen tersebut
 15. What are benefits of using react-redux ?
     Answer :
     Dapat menyentralkan suatu state management secara rapi apabila data tersebut kompleks, serta mengoptimalkan perform pada saat dilakukan rendering
+    nilainya reusable, sangat tidak cocok digunakan untuk yang tampilannya yang simpel
 
 <--Redux & Excercise-->
 1. What is Redux ?
     Answer :
-    Merupakan state management yang mana ketika digunakan tanpa harus memindahkan state dari satu komponen ke komponen yang lain
+    Third party library Merupakan state management yang mana ketika digunakan tanpa harus memindahkan state dari satu komponen ke komponen yang lain
 2. What are the problems that Redux solves ?    
     Answer :
     Perubahan state bisa ditangani di level component, perubahan statenya tidak kompleks serta jarang terjadi perubahan state di aplikasi
@@ -65,10 +67,11 @@
     Single source of truth, state nya read-only dan berubah sesuai fungsi asalnya
 5. What is the difference between Redux and Context API ?
     Answer :
+    State yang global, statenya hanya dapat antar komponen
     Dari segi maintaince untuk redux dapat melakukan troubleshoot dan testing yang kompleks, untuk context API lebih simpel. Dari segi respons lebih sederhana context API daripada Redux
 6. What are the key components of Redux architecture ?
     Answer :
-    Action, State (reducers) dan View (store)
+    Action, Reducers dan Store
 7. What do you understand about Redux Toolkit ?
     Answer :
     Hampir sama dengan redux cuman yang membedakan terdapat fitur yang menghilangkan logika redux yang ditulis tangan serta mencegah kesalahan secara umum dan menyediakan API yang sederhana untuk redux
@@ -92,6 +95,6 @@
 
 14. Describe the role of middleware in Redux ?
     Answer :
-
+    Penengah 
 15. What is the difference between synchronous and asynchronous middleware in Redux ?
     Answer :
