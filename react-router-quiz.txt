@@ -1,0 +1,128 @@
+1.  Apa perbedaan utama antara React Router v5 dan v6 ?
+    v5 (Nested Routing, Router Parameters)
+    v6 (Simpler and more intuitive API, Relative Routes)
+
+2.  Apa fungsi dari komponen <Router> di React Router v6 ?
+    <Switch> komponen serta dapat digantikan <Routes> komponennya
+
+3.  Bagaimana cara mendefinisikan rute dasar di React Router v6 ?
+    "answer-react-router/routes-route"
+
+4.  Apa itu nested routes di React Router v6 dan bagaimana cara menerapkannya ?
+    Menukarkan fragmen tampilan tertentu berdasarkan rute saat itu, cth menavigasikan informasi pengguna alih2 mengganti
+    seluruh halaman, namun hanya konten tab yang diganti
+
+5.  Apa fungsi dari hook useNavigate di React Router v6 ?
+    Menggunakan history dengan memungkinkan untuk melakukan navigasi secara terprogram dalam komponen react
+
+6.  Bagaimana cara melakukan redirect di React Router v6 ?
+
+7.  Apa kegunaan dari useParams hook dalam React Router v6 ?
+    Untuk mengakses parameter routes pada saat mengelola rutenya secara dinamis di URLHooknya
+
+8.  Bagaimana cara mengakses query string di React Router v6 ?
+    Bisa didapatkan dan mensetting string query dengan kait useSearchParams 
+ 
+9.  Apa itu outlet di React Router v6 dan bagaimana penggunaannya ?
+    Sebagai pengganti yang memungkinan komponen user untuk merender rute turunannya
+    Dalam hal tata letak, cth menginjeksi komponen bergantung pada rutenya daripada membungkus stiap komponen rute dalam komponen tata letak
+
+10. Bagaimana cara melindungi rute yang memerlukan autentikasi di React Router v6 ?
+    Merender elemen yang dapat diakses dengan href asli yang menunjuk ke sumber yang ditautkan 
+
+11. Bagaimana cara menggunakan <Link> di React Router v6 ?
+    <Link> digunakan untuk menavigasikan antar routes dalam Aplikasi
+
+12. Apa perbedaan element prop di <Route> React Router v6 dibandingkan dengan component prop di versi sebelumnya ?
+    Prop pada komponen <Route> merupakan pengganti prop komponen yang digunakan pada versi sebelumnya. Adapun memiliki
+    tujuan yang sama namun ada beberapa perbedaan diantaranya :
+    - Pada (v4 & v5) prop komponen digunakan untuk menentukan komponen react yang akan dirender ketika routesnya cocok
+    - Di v6 elemen prop digunakan sebagai pengganti komponen. Sehingga dapat diteruskan elemen yang mewakili komponen     tersebut
+
+13. Bagaimana cara menerapkan lazy loading untuk komponen di React Router v6 ?
+    - Install react router v6
+    - Create komponen
+    - Wrap routesnya
+    - Use dynamic imports and React.lazy()
+    - Add suspense, karena akan dapat menunda, serta tambahkan komponen <Suspense>
+    - Testign, pengujian akan menavigasi antar routes pada Aplikasi
+
+14. Apa kegunaan dari useRoutes hook dalam React Router v6 ?
+    useRoutes merupakan hook level rendah yang disediakan untuk mengimplementasikan logika matching routes khusus pada
+    komponen. Yang mana dapat menentukan routes secara manual dan komponen keterkaitannya sehingga memberikan banyak fleksibilitas dan kontrol atas penanganan routing dalam aplikasi
+
+15. Bagaimana cara menerapkan breadcrumbs dengan React Router v6 ?
+    Implementasi ini melibatkan pemeliharaan representasi stateful dari hierarki rute saat ini dan secara dinamis merender komponen breadcrumbs berdasarkan keadaan tersebut. 
+    Untuk dapat mencapainya dengan menggunakan konteks tersebut perlu untuk menyimpan dan memperbarui data runut tautan.
+    Berikut adalah contoh dasar bagaimana mengimplementasikan breadcrumbs dengan React Router v6 "answer-react-router/breadcrumbs"
+
+16. Bagaimana cara menangani 404 page not found di React Router v6 ?
+    Penanganan skenario 404, melibatkan penggunaan komponen <Routes> tanpa jalur yang ditentukan. Routes ini akan
+    mencocokkan lokasi mana pun yang belum cocok dengan routes lain, sehingga efektif dalam bertindak sebagai penampung semua jalur yang tidak diketahui
+
+17. Apa itu navigate function yang dikembalikan oleh useNavigate hook dan bagaimana menggunakannya ?
+    Hook useNavigate menyediakan cara untuk menavigasi antar routes secara terprogram dalam komponen
+
+18. Bagaimana cara menangani parameter opsional dalam rute di React Router v6 ?
+    Dengan parameter opsional di rute menggunakan sintaks params. 
+    Berikut contoh menentukan rute dengan parameter opsional: "answer-react-router/useParams"
+
+19. Bagaimana cara menangani redirect berdasarkan kondisi di React Router v6 ?
+    Dengan menangani pengalihan berdasarkan kondisi menggunakan kait "useNavigate" bersama dengan rendering bersyarat dalam komponen. 
+    Berikut contohnya "answer-react-router/useNavigate"
+
+20. Bagaimana cara mendefinisikan rute dengan beberapa parameter di React Router v6 ?
+    Dapat menentukan routes dengan beberapa parameter menggunakan sintaks, untuk setiap parameter di jalur route yang
+    mana setiap parameter dipisahkan dengan "/"
+
+21. Bagaimana cara menggunakan createBrowserRouter di React Router v6 ?
+    "answer-react-router/browserRouter"
+
+22. Apa itu <ReactProvider> di React Router v6 dan bagaimana penggunaannya ?
+    Merupakan komponen khusus atau komponen pihak ketiga yang spesifik. Atau tanpa lebih banyak konteks atau dokumentasi, sulit untuk memberikan informasi tentang penggunaannya.
+
+23. Bagaimana cara menggunakan createRoutesFromElements dalam React Router v6 ?
+    "answer-react-router/createRoutes"
+
+24. Apa itu resolvePath di React Router v6 dan bagaimana penggunaannya ?
+    Fungsi yang disediakan oleh paket react-router-dom. Ini digunakan untuk menyelesaikan jalur tertentu yang berhubungan dengan lokasi saat ini. 
+    Ini sangat berguna ketika ingin membuat URL baru berdasarkan jalur relatif, mirip dengan penyelesaian di Node.js untuk jalur file.
+    Contohnya "answer-react-router/resolvePath"
+
+25. Bagaimana cara mengimplementasikan search functionality menggunakan React Router v6 ?
+    Menerapkan fungsionalitas pencarian dengan React Router v6 melibatkan penggunaan parameter query. 
+    Parameter query memungkinkan Anda meneruskan informasi tambahan di URL yang dapat digunakan untuk memfilter atau mencari data di aplikasi.
+    Contohnya "answer-react-router/App" dan "answer-react-router/formSearch"
+    Saat form dikirimkan, akan menavigasikan ke rute hasil pencarian dengan permintaan pencarian sebagai parameter.
+
+26. Apa itu caseSensitive prop pada <Route> dan apa fungsinya ?
+    Di React Router v6, tidak ada prop CaseSensitive untuk komponen <Router>. 
+    Namun, di React Router versi sebelumnya, prop CaseSensitive digunakan untuk mengontrol apakah pencocokan rute harus peka huruf besar-kecil atau tidak.
+    Ketika CaseSensitive disetel ke true, router akan mempertimbangkan jalur rute sebagai case-sensitive, artinya jalur tersebut akan cocok dengan jalur persis seperti yang ditentukan, termasuk casingnya. 
+    Jika disetting ke false atau tidak ditentukan, pencocokan rute tidak membedakan huruf besar-kecil secara default, yang berarti bahwa jalur akan dicocokkan, apa pun huruf besar/kecilnya.
+
+27. Bagaimana cara mengekspos path sebagai prop ke komponen rute di React Router v6 ?
+    Pada React Router v6, tidak bisa langsung meneruskan path sebagai prop ke komponen rute seperti pada versi sebelumnya. 
+    Namun, untuk dapat mencapai fungsionalitas serupa dengan menggunakan variabel path yang tersedia di hook "useMatch" dalam komponen rute.
+    Contohnya "answer-react-router/useMatch"
+
+28. Apa itu basename dalam <BrowserRouter> dan bagaimana penggunaannya ?
+    Digunakan untuk menentukan URL dasar untuk semua rute yang dideklarasikan di dalamnya. 
+    Ini sangat berguna dalam skenario ketika aplikasi tidak dilayani dari akar domain tetapi dari subdirektori.
+    Contohnya "answer-react-router/browserRouter"
+
+29. Bagaimana cara menggunakan createMemoryRouter di React Router v6 ?
+    Pada react router v6 MemoryRouter menggunakan pendekatan yang berbeda. 
+    Daripada menyediakan komponen MemoryRouter terpisah, cukup menggunakan fungsi <MemoryRouter> yang diekspor dari paket react-router-dom 
+    untuk membuat riwayat dalam memori yang tidak berinteraksi dengan URL browser. Contohnya "answer-react-router/generatePath"
+
+30. Bagaimana cara menggunakan generePath di React Router v6 ?
+    - Install react router v6 (npm install react-router-dom)
+    - <Route path="/user/:id" element={<UserPage />} />
+    - kemudian generate pada "id" menggunakan "generePath"
+        import { generatePath } from 'react-router-dom';
+
+        const userId = '123';
+        const path = generatePath('/user/:id', { id: userId });
+
+        console.log(path); // Output: "/user/123"

@@ -1,91 +1,198 @@
 --Slide 08--
 
+1.  Apa itu otentikasi ?
+    Proses verifikasi identitas pengguna atau sistem untuk memastikan bahwa mereka adalah yang mereka klaim.  
+    Otentikasi biasanya melibatkan presentasi kredensial, seperti nama pengguna dan kata sandi, sertifikat digital, data biometrik (seperti sidik jari atau pengenalan wajah), atau token perangkat keras (seperti kartu pintar atau kunci USB). 
+    Tujuannya adalah untuk memberikan akses hanya kepada individu atau sistem yang berwenang sambil mencegah akses yang tidak sah.
+
+2.  Sebutkan tiga faktor otentikasi yang umum digunakan
+    - Faktor Pengetahuan
+    - Faktor Kepemilikan
+    - Faktor Inheren
+
+3.  Apa perbedaan antara otentikasi dua faktor dan otentikasi multifaktor ?
+    - Otentikasi Dua Faktor (2FA):
+
+        2FA memerlukan dua jenis faktor otentikasi yang berbeda dari pengguna untuk mendapatkan akses.
+        Faktor-faktor tersebut terbagi dalam dua kategori, seperti kata sandi dan handphone untuk menerima kode satu kali.
+        Penerapan umum mencakup memasukkan kata sandi diikuti dengan memasukkan kode yang dikirim melalui SMS atau dibuat oleh aplikasi autentikator.
+    
+    - Otentikasi Multi-Faktor (MFA):
+
+        MFA memerlukan dua atau lebih faktor autentikasi dari pengguna untuk mendapatkan akses.
+        Faktor tambahan ini dapat mencakup identitas pengguna (data biometrik seperti sidik jari atau pengenalan wajah)
+        MFA memberikan lapisan keamanan ekstra dibandingkan dengan 2FA dengan menawarkan faktor yang lebih beragam dan kemungkinan tingkat jaminan yang lebih tinggi.
+
+4.  Apa itu Single Sign-On (SSO) ?
+    Proses autentikasi yang memungkinkan pengguna mengakses beberapa aplikasi atau layanan dengan satu set kredensial login (seperti nama pengguna dan kata sandi).
+
+5.  Mengapa password dianggap sebagai bentuk otentikasi yang lemah ?
+    - Penggunaan Kembali Kata Sandi
+    - Phishing dan Rekayasa Sosial
+    - Penyimpanan Kata Sandi
+    - Kesulitan Mengingat Kata Sandi yang Kuat
+    
+6.  Apa itu otentikasi biometrik dan berikan 2 contoh
+    Otentikasi biometrik menggunakan karakteristik biologis atau ciri perilaku unik untuk memverifikasi identitas individu. 
+    Karakteristik ini sulit untuk ditiru atau ditiru, sehingga memberikan tingkat keamanan yang tinggi. 
+    Sistem autentikasi biometrik biasanya menangkap data biometrik, seperti sidik jari, fitur wajah, pola iris mata, pola suara, atau sifat perilaku, dan membandingkannya dengan templat yang disimpan untuk mengautentikasi pengguna.
+    Contohnya adalah Fingerprint Recognition dan Face Recognition
+
+7.  Sebutkan satu kelemahan dari otentikasi berbasis biometrik
+    Salah satu kelemahan otentikasi berbasis biometrik adalah potensi masalah privasi. 
+    Data biometrik, seperti sidik jari, fitur wajah, atau pola iris mata, pada dasarnya bersifat pribadi dan unik bagi setiap individu. 
+    Menyimpan dan menggunakan informasi sensitif ini untuk tujuan autentikasi menimbulkan kekhawatiran tentang privasi, keamanan data, dan risiko akses tidak sah atau penyalahgunaan.
+    Jika data biometrik disusupi karena pelanggaran data atau ditangani secara tidak benar oleh penyedia layanan, hal ini dapat menyebabkan pencurian identitas, penipuan, atau pelanggaran privasi lainnya. 
+    Selain itu, mungkin ada kekhawatiran mengenai pengumpulan dan penyimpanan data biometrik oleh pemerintah, perusahaan, atau entitas lain, terutama jika hal tersebut dilakukan tanpa izin yang jelas atau tanpa adanya pengamanan yang tepat.
+
+8.  Apa fungsi dari token otentikasi ?
+    Bagian data yang digunakan dalam proses autentikasi untuk memverifikasi identitas pengguna atau sistem. 
+    Fungsi utamanya adalah memberikan bukti identitas pengguna tanpa mengungkapkan informasi sensitif seperti kata sandi.
+
+9.  Apa itu OTP dan bagaimana cara kerjanya ?
+    Mekanisme keamanan yang digunakan untuk otentikasi, OTP adalah kata sandi atau kode sementara yang hanya berlaku untuk satu sesi login atau transaksi.
+    Cara kerjanya :
+    - Permintaan Otentikasi
+    - Generasi OTP
+    - Pengiriman OTP
+    - Masukan OTP
+    - Validasi OTP
+    - Sekali Pakai
+
+10. Bagaimana otentikasi dapat diperkuat dalam sistem online ?
+    Memperkuat otentikasi dalam sistem online melibatkan penerapan keamanan berlapis untuk memastikan bahwa hanya pengguna yang berwenang yang dapat mengakses informasi sensitif atau melakukan tindakan tertentu.
+    Salah satu diantaranya adalah :
+    - Kebijakan Kata Sandi yang Kuat
+    - Otentikasi Biometrik
+    - Otentikasi berbasis Token
+    - Otentikasi Berkelanjutan
+
 --Slide 09--
 
 1.  Apa itu otorisasi ?
-    
+    Proses menentukan apa yang boleh dilakukan oleh pengguna, aplikasi, atau sistem dalam sistem. 
+    Terjadi setelah autentikasi, saat identitas pengguna atau entitas diverifikasi. 
+    Setelah diautentikasi, otorisasi menentukan tingkat akses atau izin yang diberikan kepada entitas tersebut. 
+    Hal ini dapat melibatkan pemberian atau penolakan akses ke sumber daya, data, fungsi, atau operasi tertentu berdasarkan identitas pengguna, atau kriteria lain yang ditentukan.
+
 2.  Apa perbedaan utama antara otentikasi dan otorisasi ?
     authentication (otentikasi) merupakan proses validasi sedangkan
     authorization (otorisasi) merupakan proses menentukan jenis akses untuk setiap identitas atau role
 
 3.  Sebutkan 2 metode otorisasi yang sering digunakan dalam sistem komputer
+    - Kontrol Akses Berbasis Peran (RBAC): RBAC adalah metode di mana izin akses diberikan kepada pengguna berdasarkan peran mereka dalam suatu organisasi. 
+      Setiap peran memiliki izin tertentu yang terkait dengannya, dan pengguna diberikan akses berdasarkan peran yang telah ditetapkan kepada mereka
 
+    - Kontrol Akses Berbasis Atribut (ABAC): ABAC adalah metode di mana izin akses ditentukan dengan mengevaluasi atribut yang terkait dengan pengguna, sumber daya yang diakses, dan lingkungan. 
+      Atribut ini dapat mencakup hal-hal seperti peran pengguna, waktu akses, lokasi, dan informasi kontekstual lainnya. 
+      
 4.  Apa itu Role-based Access Control ?
+    Kontrol Akses Berbasis Peran (RBAC) adalah metode membatasi akses jaringan berdasarkan peran pengguna individu dalam suatu organisasi. 
+    Di RBAC, izin akses dikaitkan dengan peran, dan pengguna ditetapkan ke peran yang sesuai. 
+    Sistem memberikan hak akses kepada pengguna berdasarkan peran yang telah ditetapkan kepada mereka
 
 5.  Apa itu Policy-based Access Control ?
+    Kontrol Akses Berbasis Kebijakan (PBAC) adalah metode mengendalikan akses berdasarkan kebijakan yang ditentukan oleh suatu organisasi. 
+    Tidak seperti Kontrol Akses Berbasis Peran (RBAC), yang terutama mengandalkan peran yang telah ditentukan sebelumnya untuk menentukan akses, 
+    PBAC berfokus pada kebijakan yang menentukan siapa yang dapat mengakses apa dan dalam kondisi apapun
 
 6.  Apa keuntungan menggunakan ABAC dibandingkan dengan RBAC ?
-
+    - Kontrol Akses Dinamis
+    - Skalabilitas dan Fleksibilitas
+    - Pengendalian Berbasis Kebijakan
+    - Dukungan untuk Otorisasi Eksternal
+    
 7.  Apa itu JSON Web Token (JWT) dan bagaimana hubungannya dengan otorisasi ?
+    JSON Web Token (JWT) adalah struktur data mandiri dan ringkas yang digunakan untuk mengirimkan informasi secara aman antar pihak sebagai objek JSON. 
+    Ini biasanya digunakan untuk tujuan otentikasi dan otorisasi dalam aplikasi web dan API.
+
+    JWT sering digunakan dalam konteks otorisasi karena dapat membawa informasi tentang identitas pengguna dan izin terkait. 
+    Saat pengguna masuk atau meminta akses yang dilindungi, server mengeluarkan JWT yang berisi informasi dan izin pengguna yang relevan. 
+    Klien kemudian menyertakan JWT ini dalam permintaan berikutnya ke server, biasanya di header Otorisasi permintaan HTTP.
+    Setelah menerima permintaan dengan JWT, server memvalidasi tanda tangan token untuk memastikan keasliannya. 
+    Ia kemudian mengekstrak klaim pengguna dari payload dan menggunakannya untuk mengotorisasi operasi yang diminta. 
+    Proses ini memungkinkan autentikasi dan otorisasi yang tanpa kewarganegaraan dan dapat diskalakan, karena server tidak perlu menyimpan status sesi untuk setiap pengguna.
 
 8.  Apa yang dimaksud dengan "least privilege" dalam konteks otorisasi ?
+    "Least privilege" adalah prinsip keamanan yang menyatakan bahwa proses hanya boleh diberikan tingkat akses atau izin minimum yang diperlukan untuk melakukan tugas mereka. 
+    Dalam konteks otorisasi, hal ini berarti membatasi hak akses pengguna hanya pada sumber daya dan fungsi yang penting untuk peran atau tanggung jawab sah mereka dalam suatu organisasi.
 
 9.  Mengapa penting untuk sering memeriksa dan memperbarui kebijakan otorisasi ?
+    - Adaptasi terhadap Perubahan Persyaratan Bisnis
+    - Menjaga Postur Keamanan
+    - Manajemen risiko
+    - Meningkatkan Efisiensi dan Produktivitas
+    - Mendeteksi dan Menanggapi Anomali
 
 10. Apa itu Access Control List (ACL) ?
+    Seperangkat aturan atau izin yang menentukan siapa yang dapat mengakses sumber daya tertentu atau melakukan tindakan tertentu dalam suatu sistem. 
+    ACL biasanya digunakan dalam sistem komputer, jaringan, dan database untuk menegakkan kebijakan kontrol akses dan mengatur izin pengguna.
 
 --Slide 10--
 
 1.  Bagaimana otentikasi dan otorisasi bekerja bersama dalam keamanan sistem informasi ?
-    Otentikasi memverifikasi identitas pengguna atau sistem yang mencoba mengakses sumber daya.
-    Otorisasi menentukan sumber daya atau tindakan apa yang boleh diakses atau dilakukan oleh pengguna.
+    Otentikasi memverifikasi identitas pengguna. Otorisasi menentukan tindakan apa yang boleh diakses atau dilakukan oleh pengguna.
     Dengan menggabungkan otentikasi dan otorisasi, organisasi dapat mengontrol akses terhadap informasi sensitif,
     melindungi terhadap akses tidak sah, dan menjaga integritas dan kerahasiaan sistem dan data tersebut.
 
 2.  Sebutkan contoh aplikasi yang menggunakan otentikasi dan otorisasi
-    Web aplikasi, aplikasi enterprise, cloud service, aplikasi mobil, dan  
-
+    - Web Applications
+    - Online Banking
+    - Enterprise Systems
+    - Cloud Services
+    - Mobile Apps
+    
 3.  Apa yang terjadi jika proses otentikasi gagal ?
-    Access denied, lockout, logging dan alerting, fallback mechanism
+    Akses ditolak, lockout, logging dan alerting, mekanisme fallback
 
 4.  Mengapa penting untuk log aktivitas otentikasi dan otorisasi ?
     Monitoring keamanan, analisa forensik, audit dan akuntabilitas, 
 
 5.  Bagaimana cara sistem menangani perubahan kebijakan otorisasi tanpa mengganggu pengguna ?
-    Pembaruan Tambahan, 
-    Pembuatan Versi, 
-    Pengujian dan Staging, 
-    Peluncuran Otomatis dengan Mekanisme Rollback, 
-    Pemberitahuan dan Pelatihan Pengguna, 
-    Izin Terperinci, 
-    Pemantauan dan Peringatan Real-time, 
-    Mekanisme Umpan Balik
+    - Pembaruan Tambahan, 
+    - Pembuatan Versi, 
+    - Pengujian dan Staging, 
+    - Peluncuran Otomatis dengan Mekanisme Rollback, 
+    - Pemberitahuan dan Pelatihan Pengguna, 
+    - Izin Terperinci, 
+    - Pemantauan dan Peringatan Real-time, 
+    - Mekanisme Umpan Balik
 
 6.  Apa pengaruh kegagalan sistem otentikasi terhadap proses otorisasi ?
     Penolakan Akses, Mekanisme Penggantian, Akses Terbatas, Intervensi Manual, Risiko Keamanan
 
 7.  Bagaimana implementasi kebijakan "zero trust" mempengaruhi otentikasi dan otorisasi ?
-    Otentikasi Berkelanjutan, 
-    Akses Hak Istimewa Terkecil, 
-    Segmentasi Mikro, 
-    Akses Jaringan Zero Trust (ZTNA), 
-    Keamanan Berpusat pada Identitas, 
-    Penegakan Kebijakan Dinamis, 
-    Visibilitas dan Pemantauan
+    - Otentikasi Berkelanjutan, 
+    - Akses Hak Istimewa Terkecil, 
+    - Segmentasi Mikro, 
+    - Akses Jaringan Zero Trust (ZTNA), 
+    - Keamanan Berpusat pada Identitas, 
+    - Penegakan Kebijakan Dinamis, 
+    - Visibilitas dan Pemantauan
 
 8.  Apa dampak dari serangan keamanan pada sistem otentikasi dan otorisasi ?
-    Akses Tidak Sah, 
-    Pelanggaran Data, 
-    Pencurian dan Penipuan Identitas, 
-    Gangguan Layanan, 
-    Rusaknya Reputasi, 
-    Pelanggaran Kepatuhan Terhadap Peraturan, 
-    Biaya Operasional
+    - Akses Tidak Sah, 
+    - Pelanggaran Data, 
+    - Pencurian dan Penipuan Identitas, 
+    - Gangguan Layanan, 
+    - Rusaknya Reputasi, 
+    - Pelanggaran Kepatuhan Terhadap Peraturan, 
+    - Biaya Operasional
 
 9.  Bagaimana teknologi blockchain dapat mempengaruhi otentikasi dan otorisasi ?
-    Manajemen Identitas Terdesentralisasi, 
-    Catatan Identitas yang Tidak Dapat Diubah, 
-    Tanda Tangan dan Pengesahan Digital, 
-    Protokol Otentikasi Terdesentralisasi, 
-    Kontrol Akses yang Diizinkan, 
-    Auditabilitas dan Transparansi, 
-    Interoperabilitas dan Portabilitas
+    - Manajemen Identitas Terdesentralisasi, 
+    - Catatan Identitas yang Tidak Dapat Diubah, 
+    - Tanda Tangan dan Pengesahan Digital, 
+    - Protokol Otentikasi Terdesentralisasi, 
+    - Kontrol Akses yang Diizinkan, 
+    - Auditabilitas dan Transparansi, 
+    - Interoperabilitas dan Portabilitas
     
 10. Apa peran administrator sistem dalam pengelolaan otentikasi dan otorisasi ?
-    Implementasi dan Konfigurasi, 
-    Penyediaan dan Pencabutan Penyediaan Pengguna, 
-    Penegakan Kebijakan Keamanan, 
-    Pemecahan Masalah dan Dukungan, 
-    Pemantauan dan Audit, 
-    Pemeliharaan dan Peningkatan Sistem, 
-    Pelatihan dan Edukasi Pengguna
+    - Implementasi dan Konfigurasi, 
+    - Penyediaan dan Pencabutan Penyediaan Pengguna, 
+    - Penegakan Kebijakan Keamanan, 
+    - Pemecahan Masalah dan Dukungan, 
+    - Pemantauan dan Audit, 
+    - Pemeliharaan dan Peningkatan Sistem, 
+    - Pelatihan dan Edukasi Pengguna
